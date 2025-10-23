@@ -1,0 +1,680 @@
+.festivals-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Hero Section */
+.festivals-hero {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(135deg, 
+    rgba(220, 53, 69, 0.8) 0%, 
+    rgba(253, 126, 20, 0.8) 100%),
+    url('/images/festivals-hero.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.3;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Introduction Section */
+.introduction-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.intro-content h2 {
+  font-size: 2.5rem;
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.festival-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature h4 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Major Festivals Section */
+.major-festivals-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.festivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.festival-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.festival-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.festival-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.festival-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.festival-card:hover .festival-image img {
+  transform: scale(1.05);
+}
+
+.festival-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(220, 53, 69, 0.9);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.festival-content {
+  padding: 1.5rem;
+}
+
+.festival-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.festival-header h3 {
+  color: #dc3545;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.festival-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: right;
+}
+
+.duration, .month {
+  background: #e9ecef;
+  color: #495057;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.festival-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.significance-box {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #dc3545;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.significance-box strong {
+  color: #dc3545;
+}
+
+.activities-section, .highlights-section {
+  margin-bottom: 1.5rem;
+}
+
+.activities-section h4, .highlights-section h4 {
+  color: #dc3545;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.activities-list, .highlights-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.activity-tag {
+  background: #ffe6e6;
+  color: #dc3545;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.highlight-tag {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Buddhist Festivals Section */
+.buddhist-festivals-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.buddhist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.festival-card.buddhist {
+  border-left: 5px solid #2c5530;
+}
+
+.festival-content h3 {
+  color: #2c5530;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.festival-type {
+  background: #e8f5e8;
+  color: #2c5530;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.festival-details {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.detail-item strong {
+  color: #2c5530;
+}
+
+.rituals-section {
+  margin-bottom: 1.5rem;
+}
+
+.rituals-section h4 {
+  color: #2c5530;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.rituals-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ritual-tag {
+  background: #e8f5e8;
+  color: #2c5530;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.unique-feature {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #2c5530;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.unique-feature strong {
+  color: #2c5530;
+}
+
+/* Cultural Festivals Section */
+.cultural-festivals-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.cultural-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.festival-card.cultural {
+  border-left: 5px solid #fd7e14;
+}
+
+.community-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(253, 126, 20, 0.9);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.festival-card.cultural h3 {
+  color: #fd7e14;
+}
+
+.festival-card.cultural .festival-type {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.festival-card.cultural .significance-box {
+  border-left-color: #fd7e14;
+}
+
+.festival-card.cultural .significance-box strong {
+  color: #fd7e14;
+}
+
+.traditions-section, .food-section {
+  margin-bottom: 1.5rem;
+}
+
+.traditions-section h4, .food-section h4 {
+  color: #fd7e14;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.traditions-list, .food-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tradition-tag {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.food-tag {
+  background: #ffe6e6;
+  color: #dc3545;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Seasonal Festivals Section */
+.seasonal-festivals-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.seasonal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.festival-card.seasonal {
+  border-left: 5px solid #6f42c1;
+}
+
+.season-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(111, 66, 193, 0.9);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.festival-card.seasonal h3 {
+  color: #6f42c1;
+}
+
+.festival-card.seasonal .festival-type {
+  background: #e6e6ff;
+  color: #6f42c1;
+}
+
+.features-section {
+  margin-bottom: 1.5rem;
+}
+
+.features-section h4 {
+  color: #6f42c1;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-tag {
+  background: #e6e6ff;
+  color: #6f42c1;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.highlight-box {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #6f42c1;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.highlight-box strong {
+  color: #6f42c1;
+}
+
+/* Calendar Section */
+.calendar-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+  color: white;
+}
+
+.calendar-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.calendar-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.calendar-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.calendar-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calendar-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar-item li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+
+.calendar-item li:last-child {
+  border-bottom: none;
+}
+
+/* Tips Section */
+.tips-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.tips-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #dc3545;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tip-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tip-card h4 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tip-card p {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .festivals-grid, .buddhist-grid, .cultural-grid, .seasonal-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-features, .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .festival-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .festival-meta {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .festivals-hero {
+    height: 300px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .festival-features, .tips-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .activities-list, .highlights-list, .rituals-list, .traditions-list, .food-list, .features-list {
+    flex-direction: column;
+  }
+}

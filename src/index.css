@@ -1,0 +1,13 @@
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  text-shadow: 0px 0px 10px #00ff99;
+}
+
+img:hover {
+  filter: brightness(120%) drop-shadow(0px 0px 15px #00ff99);
+}
