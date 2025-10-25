@@ -11,78 +11,87 @@ const Audios = () => {
   const buddhistStories = [
     {
       id: 1,
+      title: "The Story of Budhha",
+      description: "Journey of Siddhartha Gautama from a sheltered prince to the fully Awakened One.",
+      duration: "7:08",
+      audioSrc: "/audio/Audio-9_30_2025.m4a",
+      moral: "True peace comes not from luxury, but from understanding and mastering the mind",
+      category: "Life Story "
+    },
+    {
+      id: 2,
       title: "The Mustard Seed",
       description: "A story about a mother who learns the universal truth of suffering and impermanence from Buddha himself.",
-      duration: "0:38",
-      audioSrc: "/audio/AUD-20251017-WA0021.mp3",
+      duration: "4:08",
+      audioSrc: "/audio/mustard-seed.mp3",
       moral: "Suffering is universal, and understanding this brings compassion",
       category: "Wisdom Story"
     },
     {
-      id: 2,
+      id: 3,
       title: "The Angry Elephant",
       description: "How Buddha tamed a wild elephant through loving-kindness and compassion.",
-      duration: "6:30",
+      duration: "3:02",
       audioSrc: "/audio/angry-elephant.mp3",
       moral: "Love and compassion can tame even the wildest hearts",
       category: "Compassion Story"
     },
     {
-      id: 3,
-      title: "The Two Arrows",
-      description: "Buddha teaches about physical pain and mental suffering through the metaphor of two arrows.",
-      duration: "7:15",
-      audioSrc: "/audio/two-arrows.mp3",
-      moral: "We suffer more from our reactions than from the pain itself",
+      id: 4,
+      title: "The Muddy Lake",
+      description: " A story that teaches the importance of calmness and patience in finding inner clarity.",
+      duration: "4:17",
+      audioSrc: "/audio/muddylake.m4a",
+      moral: "True wisdom and clarity come through patience and mindfulness, not through struggle or force.",
       category: "Mindfulness Story"
     },
     {
-      id: 4,
-      title: "The Silent Buddha",
-      description: "A story about understanding the essence of Dharma beyond words and scriptures.",
-      duration: "9:20",
-      audioSrc: "/audio/silent-buddha.mp3",
-      moral: "True understanding comes from experience, not just knowledge",
+      id: 5,
+      title: "The Wounded Swan",
+      description: "A story that teaches the value of compassion and protecting life over causing harm.",
+      duration: "6:27",
+      audioSrc: "/audio/woundedswan.m4a",
+      moral: "It shows that protecting life is nobler than taking life",
       category: "Enlightenment Story"
     }
   ];
 
   const buddhistSlokhas = [
     {
-      id: 5, // Changed IDs to avoid conflicts
-      title: "Om Mani Padme Hum",
-      description: "The six-syllable mantra of Avalokiteshvara, embodying compassion and wisdom.",
-      duration: "12:30",
-      audioSrc: "/audio/om-mani-padme-hum.mp3",
-      meaning: "The jewel is in the lotus - purity of body, speech, and mind",
-      category: "Mantra Chanting"
-    },
-    {
-      id: 6,
-      title: "Heart Sutra Chant",
-      description: "The profound Prajnaparamita Heart Sutra chanted by Tibetan monks.",
-      duration: "15:45",
-      audioSrc: "/audio/heart-sutra.mp3",
-      meaning: "Form is emptiness, emptiness is form - the essence of wisdom",
-      category: "Sutra Chanting"
+      id: 6, // Changed IDs to avoid conflicts
+      title: " Panca Sila - The Five Precept",
+      description: " the foundation for mental development (meditation) and wisdom on the path to enlightenment.",
+      duration: "1:00",
+      audioSrc: "/audio/pancasila.mp3",
+      meaning: "The five precepts : (1) Refraining from taking the life of living beings (non-killing).(2) Refraining from taking what is not given (non-stealing).(3) Refraining from sexual misconduct (adultery, exploitation, or generally wrong conduct in sexual pleasures).(4) Refraining from false speech (lying, malicious speech, harsh speech, and gossip).(5) Refraining from intoxicants that cause heedlessness and carelessness (such as alcohol and drugs).",
+      category: "Ethical Conduct"
     },
     {
       id: 7,
-      title: "Green Tara Mantra",
-      description: "Chant for protection and removal of obstacles by Green Tara.",
-      duration: "10:20",
-      audioSrc: "/audio/green-tara.mp3",
-      meaning: "Invoking the female Buddha for swift compassion and action",
-      category: "Protection Mantra"
+      title: "Tri-Sarana - The Three Refuges.",
+      description: " fundamental and universally accepted act of faith in Buddhism, marking the formal entry of a person onto the Buddhist path.",
+      duration: "1:12",
+      audioSrc: "/audio/trisarana.mp3",
+      meaning: "(1)Buddhaṃ saraṇaṃ gacchāmi(I go to the Buddha for refuge.).(2)Dhammaṃ saraṇaṃ gacchāmi(I go to the Dhamma for refuge).(3)Saṅghaṃ saraṇaṃ gacchāmi(I go to the Saṅgha for refuge.)",
+      category: "Refuge of Budhha"
     },
     {
       id: 8,
-      title: "Medicine Buddha Mantra",
-      description: "Healing chant for physical and spiritual well-being.",
-      duration: "8:15",
-      audioSrc: "/audio/medicine-buddha.mp3",
+      title: "Buddha Vandana",
+      description: "It is the subsequent extended praise of buddhabhivadana and recollection of the Buddha's nine supreme qualities.",
+      duration: "1:47",
+      audioSrc: "/audio/buddhavandana.mp3",
+      meaning: "Invoking the female Buddha for swift compassion and action",
+      category: "Buddhist devotional practice"
+    },
+    {
+      id: 9,
+      title: "Buddhabhivadana",
+      description: " Ritualized expression of devotion or veneration to the Buddha.",
+      duration: "0:38",
+      audioSrc: "/audio/buddhabhivadana.mp3",
       meaning: "Purification and healing through the Medicine Buddha's blessings",
-      category: "Healing Chant"
+      category: " Acknowledging the Budhha"
     }
   ];
 
@@ -317,6 +326,11 @@ const Audios = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+export default Audios;
     </div>
   );
 };
