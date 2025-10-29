@@ -7,7 +7,7 @@ function Contact() {
       style={{ backgroundImage: "url('/images/tsongmo.jpg')", backgroundSize: "cover",borderRadius: "10px" }}
     >
       <div className="section-content">
-        <h2>Contact us</h2>
+        <h2>Contact us @ +919876543210</h2>
 
       </div>
     </div>
