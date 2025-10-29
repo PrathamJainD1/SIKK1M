@@ -330,9 +330,6 @@ const Audios = () => {
   );
 };
 
-export default Audios;
-    </div>
-  );
-};
+
 
 export default Audios;
